@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#021F16" />
+  <title>The Italia | Taste the Passion of Italy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="site-shell">
+  <header class="site-header">
+    <a class="brand" href="#" data-page="Home" aria-label="The Italia home"><span class="brand-small">The</span><span>Italia</span><i class="italian-flag"><b></b><b></b><b></b></i></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-link active" data-page="Home">Home</button>
+      <button class="nav-link" data-page="About">About</button>
+      <button class="nav-link" data-page="Menu">Menu</button>
+      <button class="nav-link" data-page="Gallery">Gallery</button>
+      <button class="nav-link" data-page="Reservation">Reservation</button>
+      <button class="nav-link" data-page="Contact">Contact</button>
+    </nav>
+    <button class="btn header-book" data-page="Reservation">Book a Table <span>↗</span></button>
+    <button class="mobile-menu" aria-label="Open menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="page-content">
+    <section class="page home-page" data-view="Home">
+      <section class="home-hero">
+        <div class="hero-copy">
+          <small class="eyebrow">AUTHENTIC ITALIAN CUISINE</small>
+          <h1>The <em>Italia</em></h1>
+          <h2>Taste the Passion of Italy</h2>
+          <p>From our kitchen to your heart — experience the perfect blend of tradition, taste and elegance.</p>
+          <div class="hero-actions"><button class="btn" data-page="Menu">Explore Menu <span>→</span></button><button class="story-link" data-page="About"><span class="play">▷</span> Watch Our Story</button></div>
+          <i class="italian-flag hero-flag"><b></b><b></b><b></b></i>
+        </div>
+        <div class="home-image-wrap"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1200&q=85" alt="Freshly prepared Italian pasta"></div>
+      </section>
+
+      <section class="feature-strip">
+        <article><span class="feature-icon">♧</span><b>Expert Chefs</b><small>World-class taste</small></article>
+        <article><span class="feature-icon">✿</span><b>Fresh Ingredients</b><small>Always fresh</small></article>
+        <article><span class="feature-icon">♨</span><b>Cozy Ambience</b><small>Perfect for you</small></article>
+        <article><span class="feature-icon">♡</span><b>Memorable Moments</b><small>With loved ones</small></article>
+      </section>
+
+      <section class="split-section speciality">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85" alt="Warm Italian restaurant interior">
+        <div><small class="eyebrow">OUR SPECIALITY</small><h2>A True Italian <em>Experience</em></h2><p>Savor authentic Italian flavors with handcrafted dishes, timeless recipes, and the finest ingredients. Every plate tells a story of tradition and love.</p><button class="btn" data-page="About">Discover More <span>→</span></button></div>
+      </section>
+
+      <section class="section signature">
+        <div class="section-heading"><small class="eyebrow">FROM OUR KITCHEN</small><h2>Signature Delights</h2><p>A little taste of Italy, made fresh just for you.</p></div>
+        <div class="dish-grid compact-grid" id="signature-grid"></div>
+        <div class="center-action"><button class="btn" data-page="Menu">Explore Full Menu <span>↗</span></button></div>
+      </section>
+    </section>
+
+    <section class="page" data-view="About" hidden>
+      <section class="page-banner" style="background-image:linear-gradient(90deg,#021f16ed,#021f1680 60%,#021f1610),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=85')"><small>ABOUT US</small><h1>Our Story</h1><p>A Journey of Taste &amp; Passion</p><span>Home　›　About</span></section>
+      <section class="split-section about-story"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1000&q=85" alt="Chef preparing pasta"><div><small class="eyebrow">WELCOME TO THE ITALIA</small><h2>Italian Tradition <em>Lives</em></h2><p>The Italia was born from a simple idea — to bring authentic Italian taste to your table. With passion and the finest ingredients, we create unforgettable experiences, bringing people together around great food.</p><button class="btn" data-page="Menu">Our Menu <span>→</span></button></div></section>
+      <section class="stats"><div><strong>10+</strong><small>Years Experience</small></div><div><strong>50K+</strong><small>Happy Customers</small></div><div><strong>4.8★</strong><small>Customer Rating</small></div></section>
+    </section>
+
+    <section class="page" data-view="Menu" hidden>
+      <section class="page-banner" style="background-image:linear-gradient(90deg,#021f16ed,#021f1680 60%,#021f1610),url('https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1600&q=85')"><small>OUR MENU</small><h1>A Culinary Journey</h1><p>Discover the flavors of authentic Italy</p><span>Home　›　Menu</span></section>
+      <section class="section menu-section"><div class="filter-bar" id="menu-filters"></div><div class="dish-grid" id="menu-grid"></div><div class="mood-banner"><h2>Good Food, <em>Good Mood</em></h2><p>Life is better with Italian food.</p><button class="btn" data-page="Reservation">Book a Table <span>→</span></button></div></section>
+    </section>
+
+    <section class="page" data-view="Gallery" hidden>
+      <section class="page-banner" style="background-image:linear-gradient(90deg,#021f16ed,#021f1680 60%,#021f1610),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=85')"><small>OUR GALLERY</small><h1>A Taste in Pictures</h1><p>Moments, flavors, and memories from The Italia</p><span>Home　›　Gallery</span></section>
+      <section class="section"><div class="gallery-grid" id="gallery-grid"></div></section>
+    </section>
+
+    <section class="page" data-view="Reservation" hidden>
+      <section class="page-banner" style="background-image:linear-gradient(90deg,#021f16ed,#021f1680 60%,#021f1610),url('https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=1600&q=85')"><small>RESERVATION</small><h1>Reserve Your Table</h1><p>An unforgettable dining experience awaits</p><span>Home　›　Reservation</span></section>
+      <section class="inquiry-section"><div class="inquiry-intro"><small class="eyebrow">BOOK A TABLE</small><h2>Make it a special evening.</h2><p>⌖　123 Food Street, Chattogram</p><p>☎　+880 123 456 789</p><p>✉　hello@theitalia.com</p><p>◷　Daily · 12 PM – 10 PM</p></div><form class="contact-form" id="reservation-form"><h3>Your Reservation</h3><label>Full Name *<input name="name" required placeholder="Your name"></label><label>Email Address *<input name="email" type="email" required placeholder="Your email"></label><div class="form-row"><label>Date *<input name="date" type="date" required></label><label>Time *<select name="time" required><option value="">Choose time</option><option>6 PM</option><option>7 PM</option><option>8 PM</option><option>9 PM</option></select></label></div><label>Number of Guests<select name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label><label>Special Request<textarea name="request" placeholder="Anything we should know?"></textarea></label><button class="btn" type="submit">Confirm Reservation <span>→</span></button><p class="form-message" aria-live="polite"></p></form></section>
+    </section>
+
+    <section class="page" data-view="Contact" hidden>
+      <section class="page-banner" style="background-image:linear-gradient(90deg,#021f16ed,#021f1680 60%,#021f1610),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=85')"><small>GET IN TOUCH</small><h1>Contact Us</h1><p>We’d love to hear from you</p><span>Home　›　Contact</span></section>
+      <section class="inquiry-section"><div class="inquiry-intro"><small class="eyebrow">OUR LOCATION</small><h2>Come say ciao!</h2><p>⌖　123 Food Street, Chattogram</p><p>☎　+880 123 456 789</p><p>✉　hello@theitalia.com</p><p>◷　Daily · 12 PM – 10 PM</p><h3>Follow Us</h3><div class="social-links"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="X">𝕏</a></div></div><form class="contact-form" id="contact-form"><h3>Send Us a Message</h3><label>Your Name *<input name="name" required placeholder="Full name"></label><label>Your Email *<input name="email" type="email" required placeholder="Email address"></label><label>Your Message *<textarea name="message" required placeholder="Write your message..."></textarea></label><button class="btn" type="submit">Send Message <span>→</span></button><p class="form-message" aria-live="polite"></p></form></section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-columns">
+      <div class="footer-brand"><a class="brand" href="#" data-page="Home"><span class="brand-small">The</span><span>Italia</span><i class="italian-flag"><b></b><b></b><b></b></i></a><p>Taste the Passion of Italy.<br>Authentic flavors, warm memories.</p></div>
+      <div class="footer-explore"><h3>Explore</h3><div class="footer-nav"></div></div>
+      <div><h3>Visit Us</h3><p>123 Food Street, Chattogram</p><p>+880 123 456 789</p><p>hello@theitalia.com</p></div>
+      <div><h3>Opening Hours</h3><p>Daily · 12 PM – 10 PM</p><button class="btn outline" data-page="Reservation">Book a Table <span>↗</span></button></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 The Italia · Crafted with ♥ and Italian passion</span><i class="italian-flag"><b></b><b></b><b></b></i></div>
+  </footer>
+</div>
+<div class="lightbox" id="lightbox" hidden><button class="lightbox-close" aria-label="Close image">×</button><img src="" alt="Gallery enlarged image"></div>
+<script src="script.js"></script>
+</body>
+</html>
